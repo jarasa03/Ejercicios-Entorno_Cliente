@@ -13,7 +13,7 @@ function calcularPotencia() {
 
     }
 
-    document.getElementById("resul").innerText = "Resultado: " + resultado;
+    document.getElementById("resul").innerHTML = "Resultado de " + baseOK + "<sup>" + expoOK + "</sup>" + " es igual a " + resultado;
 
 
 }
