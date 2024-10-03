@@ -1,0 +1,7 @@
+span {
+    color: red;
+}
+
+span:last-child {
+    color: pink;
+}
