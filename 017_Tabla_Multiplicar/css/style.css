@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;
+    text-align: center;
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 10%;
+    font-size: x-large;
+}
+
+td {
+    border: solid;
+    width: 35px;
+    height: 35px;
+    background-color: lightblue;
+}
+
+th {
+    border: solid;
+    width: 35px;
+    height: 35px;
+    background-color: lightcoral;
+}
