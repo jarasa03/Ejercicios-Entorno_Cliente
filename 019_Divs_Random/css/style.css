@@ -1,0 +1,10 @@
+#boton {
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+id {
+    background-color: darkred;
+}
