@@ -1,0 +1,16 @@
+#escribir {
+    width: 240px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
+
+div {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
