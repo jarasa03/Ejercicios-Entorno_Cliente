@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 img {
     width: 1000px;
     position: absolute;
@@ -9,4 +10,17 @@ input {
     position: absolute;
     left: 40%;
     bottom: 10%;
+=======
+img {
+    width: 1000px;
+    position: absolute;
+    left: 15%;
+    top: 2%;
+}
+
+input {
+    position: absolute;
+    left: 40%;
+    bottom: 10%;
+>>>>>>> b9c93f9 (Primer commit desde VSCode)
 }

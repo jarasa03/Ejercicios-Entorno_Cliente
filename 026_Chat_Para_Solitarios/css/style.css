@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #escribir {
     width: 240px;
 }
@@ -13,4 +14,21 @@ div {
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
+=======
+#escribir {
+    width: 240px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
+
+div {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+>>>>>>> b9c93f9 (Primer commit desde VSCode)
 }

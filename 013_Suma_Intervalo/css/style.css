@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 span {
     color: red;
 }
 
 span:last-child {
     color: pink;
+=======
+span {
+    color: red;
+}
+
+span:last-child {
+    color: pink;
+>>>>>>> b9c93f9 (Primer commit desde VSCode)
 }

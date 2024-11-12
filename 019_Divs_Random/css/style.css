@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #boton {
     position: absolute;
     margin-top: 30%;
@@ -7,4 +8,15 @@
 
 id {
     background-color: darkred;
+=======
+#boton {
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+id {
+    background-color: darkred;
+>>>>>>> b9c93f9 (Primer commit desde VSCode)
 }

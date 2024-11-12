@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1 {
     background-color: lightcoral;
     align-items: center;
@@ -15,4 +16,23 @@ button {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+=======
+h1 {
+    background-color: lightcoral;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    border-radius: 6px;
+}
+
+button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+>>>>>>> b9c93f9 (Primer commit desde VSCode)
 }
