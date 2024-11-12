@@ -27,36 +27,36 @@ function initBuscaminas(filas, columnas, minas) {
     while (minasColocadas < minas) {
         let fila = getRandomNumber(0, filas - 1);
         let columna = getRandomNumber(0, columnas - 1);
-        if (arrayFinal[fila][columna] === "*") {
+        if (arrayFinal[fila][columna] === "💣") {
             continue;
         } else {
-            arrayFinal[fila][columna] = "*";
+            arrayFinal[fila][columna] = "💣";
             minasColocadas++;
             // Comprobación de las 8 direcciones, incluyendo diagonales.
-            if ((fila + 1 < filas) && (arrayFinal[fila + 1][columna] != "*")) {
+            if ((fila + 1 < filas) && (arrayFinal[fila + 1][columna] != "💣")) {
                 arrayFinal[fila + 1][columna] += 1;
             }
-            if ((fila - 1 >= 0) && (arrayFinal[fila - 1][columna] != "*")) {
+            if ((fila - 1 >= 0) && (arrayFinal[fila - 1][columna] != "💣")) {
                 arrayFinal[fila - 1][columna] += 1;
             }
-            if ((columna + 1 < columnas) && (arrayFinal[fila][columna + 1] != "*")) {
+            if ((columna + 1 < columnas) && (arrayFinal[fila][columna + 1] != "💣")) {
                 arrayFinal[fila][columna + 1] += 1;
             }
-            if ((columna - 1 >= 0) && (arrayFinal[fila][columna - 1] != "*")) {
+            if ((columna - 1 >= 0) && (arrayFinal[fila][columna - 1] != "💣")) {
                 arrayFinal[fila][columna - 1] += 1;
             }
 
             // Diagonales
-            if ((fila + 1 < filas) && (columna + 1 < columnas) && (arrayFinal[fila + 1][columna + 1] != "*")) {
+            if ((fila + 1 < filas) && (columna + 1 < columnas) && (arrayFinal[fila + 1][columna + 1] != "💣")) {
                 arrayFinal[fila + 1][columna + 1] += 1;
             }
-            if ((fila + 1 < filas) && (columna - 1 >= 0) && (arrayFinal[fila + 1][columna - 1] != "*")) {
+            if ((fila + 1 < filas) && (columna - 1 >= 0) && (arrayFinal[fila + 1][columna - 1] != "💣")) {
                 arrayFinal[fila + 1][columna - 1] += 1;
             }
-            if ((fila - 1 >= 0) && (columna + 1 < columnas) && (arrayFinal[fila - 1][columna + 1] != "*")) {
+            if ((fila - 1 >= 0) && (columna + 1 < columnas) && (arrayFinal[fila - 1][columna + 1] != "💣")) {
                 arrayFinal[fila - 1][columna + 1] += 1;
             }
-            if ((fila - 1 >= 0) && (columna - 1 >= 0) && (arrayFinal[fila - 1][columna - 1] != "*")) {
+            if ((fila - 1 >= 0) && (columna - 1 >= 0) && (arrayFinal[fila - 1][columna - 1] != "💣")) {
                 arrayFinal[fila - 1][columna - 1] += 1;
             }
         }
@@ -72,5 +72,24 @@ function getRandomNumber(min, max) {
     return random;
 }
 
+function createTable(array, id, clase) {
+    let tabla = document.createElement("table");
+    tabla.id = id; // Asignar el id proporcionado
+    tabla.className = clase; // Asignar la clase proporcionada
+    document.querySelector("body").appendChild(tabla);
+
+    // Iterar sobre las filas del array
+    for (let i = 0; i < array.length; i++) {
+        let fila = document.createElement("tr"); // Crear una nueva fila de tabla
+        for (let j = 0; j < array[i].length; j++) {
+            let celda = document.createElement("td"); // Crear una nueva celda de tabla
+            celda.innerText = array[i][j]; // Asignar el valor de la celda
+            fila.appendChild(celda); // Añadir la celda a la fila
+        }
+        tabla.appendChild(fila); // Añadir la fila a la tabla
+    }
+}
+
+
 let arr = initBuscaminas(7, 11, 15); // 7 filas, 11 columnas y 15 minas
-document.getElementById("introducir").innerText = showArray(arr);
+createTable(arr, "tablaBuscaminas", "miTabla");
