@@ -1,0 +1,39 @@
+#recorrido {
+    width: 568px;
+    height: 300px;
+    background-color: lightgoldenrodyellow;
+}
+
+button {
+    background-color: antiquewhite;
+}
+
+img {
+    position: absolute;
+}
+
+#cocheAzul {
+    top: 120px;
+}
+
+#cocheAmarillo {
+    top: 260px;
+}
+
+#cocheRojo {
+    top: 10px;
+}
+
+#start {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#meta {
+    position: absolute;
+    border: 1px solid black;
+    height: 300px;
+    left: 575px;
+}

@@ -1,0 +1,25 @@
+table {
+    border-collapse: collapse;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+td {
+    border: 1px, black solid;
+    padding: 5px;
+}
+
+th {
+    border: 1px, black solid;
+    padding: 5px;
+    background-color: lightblue;
+}
+
+#derecha {
+    text-align: right;
+}
+
+#izquierda {
+    text-align: left;
+}

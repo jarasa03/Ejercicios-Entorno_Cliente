@@ -1,0 +1,128 @@
+function numeroAleatorioEntre(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
+"Hola,mundo".split(","); // ["Hola", "mundo"]
+
+"Hola".substring(0, 3); // "Hol"
+
+" Hola ".trim(); // "Hola"
+
+[1, 2, 3].map(x => x * 2); // [2, 4, 6]
+
+const arr = [1, 2];
+arr.push(3); // [1, 2, 3]
+
+const arr = [1, 2, 3];
+arr.pop(); // [1, 2]
+
+(123.456).toFixed(2); // "123.46"
+
+parseInt("10", 10); // 10
+
+function aproximarDecimales(numero, decimales) {
+    if (decimales < 0) return numero; // Si los decimales son negativos, devuelve el número original
+    
+    const factor = Math.pow(10, decimales);
+    return Math.round(numero * factor) / factor;
+}
+
+setTimeout(function () {
+
+}, 1000);
+
+BUCLES
+For Loop
+for (var i = 0; i < 10; i++) {
+document.write(i + ": " + i*3 + "<br />");
+}
+var sum = 0;
+for (var i = 0; i < a.length; i++) {
+sum + = a[i];
+}               // parsing an array
+html = "";
+for (var i of custOrder) {
+html += "<li>" + i + "</li>";
+}
+While Loop
+var i = 1;                      // initialize
+while (i < 100) {               // enters the cycle if statement is true
+i *= 2;                     // increment to avoid infinite loop
+document.write(i + ", ");   // output
+}
+Do While Loop
+var i = 1;                      // initialize
+do {                            // enters cycle at least once
+i *= 2;                     // increment to avoid infinite loop
+document.write(i + ", ");   // output
+} while (i < 100)               // repeats cycle if statement is true at the end
+Break
+for (var i = 0; i < 10; i++) {
+if (i == 5) { break; }          // stops and exits the cycle
+document.write(i + ", ");       // last output number is 4
+}
+Continue
+for (var i = 0; i < 10; i++) {
+if (i == 5) { continue; }       // skips the rest of the cycle
+document.write(i + ", ");       // skips 5
+}
+
+VARIABLES
+var a;                          // variable
+var b = "init";                 // string
+var c = "Hi" + " " + "Joe";     // = "Hi Joe"
+var d = 1 + 2 + "3";            // = "33"
+var e = [2,3,5,8];              // array
+var f = false;                  // boolean
+var g = /()/;                   // RegEx
+var h = function(){};           // function object
+const PI = 3.14;                // constant
+var a = 1, b = 2, c = a + b;    // one line
+let z = 'zzz';                  // block scope local variable
+
+Strings⊗
+var abc = "abcdefghijklmnopqrstuvwxyz";
+var esc = 'I don\'t \n know';   // \n new line
+var len = abc.length;           // string length
+abc.indexOf("lmno");            // find substring, -1 if doesn't contain 
+abc.lastIndexOf("lmno");        // last occurance
+abc.slice(3, 6);                // cuts out "def", negative values count from behind
+abc.replace("abc","123");       // find and replace, takes regular expressions
+abc.toUpperCase();              // convert to upper case
+abc.toLowerCase();              // convert to lower case
+abc.concat(" ", str2);          // abc + " " + str2
+abc.charAt(2);                  // character at index: "c"
+abc[2];                         // unsafe, abc[2] = "C" doesn't work
+abc.charCodeAt(2);              // character code at index: "c" -> 99
+abc.split(",");                 // splitting a string on commas gives an array
+abc.split("");                  // splitting on characters
+128.toString(16);               // number to hex(16), octal (8) or binary (2)
+
+DATES FECHAS
+Tue Nov 26 2024 14:44:22 GMT+0100 (hora estándar de Europa central)
+var d = new Date();
+1732628662040 miliseconds passed since 1970
+Number(d) 
+Date("2017-06-23");                 // date declaration
+Date("2017");                       // is set to Jan 01
+Date("2017-06-23T12:00:00-09:45");  // date - time YYYY-MM-DDTHH:MM:SSZ
+Date("June 23 2017");               // long date format
+Date("Jun 23 2017 07:45:00 GMT+0100 (Tokyo Time)"); // time zone
+
+MATH
+var pi = Math.PI;       // 3.141592653589793
+Math.round(4.4);        // = 4 - rounded
+Math.round(4.5);        // = 5
+Math.pow(2,8);          // = 256 - 2 to the power of 8
+Math.sqrt(49);          // = 7 - square root 
+Math.abs(-3.14);        // = 3.14 - absolute, positive value
+Math.ceil(3.14);        // = 4 - rounded up
+Math.floor(3.99);       // = 3 - rounded down
+Math.sin(0);            // = 0 - sine
+Math.cos(Math.PI);      // OTHERS: tan,atan,asin,acos,
+Math.min(0, 3, -2, 2);  // = -2 - the lowest value
+Math.max(0, 3, -2, 2);  // = 3 - the highest value
+Math.log(1);            // = 0 natural logarithm 
+Math.exp(1);            // = 2.7182pow(E,x)
+Math.random();          // random number between 0 and 1
+Math.floor(Math.random() * 5) + 1;  // random integer, from 1 to 5
