@@ -1,0 +1,31 @@
+body {
+    background-image: url("../pngtree-aerial-scene-of-intersection-art-street-highway-vector-png-image_37017658.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 720px;
+    overflow: hidden;
+}
+
+input[type="button"] {
+    left: 0;
+    width: 150px;
+}
+
+#coche1 {
+    position: absolute;
+    top: 385px;
+}
+
+#elmejorcochedelahistoria {
+    position: absolute;
+    top: 310px;
+}
+
+#semaforo {
+    position: absolute;
+    top: 450px;
+    left: 535px;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    background-color: lightgreen;
+}
