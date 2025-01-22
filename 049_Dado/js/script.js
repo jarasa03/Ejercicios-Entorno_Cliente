@@ -2,7 +2,7 @@ const crear = document.getElementById("crear");
 const tapete = document.getElementById("tapete");
 const elegir = document.getElementById("elegir");
 
-function dado(numCaras = 6) {
+function Dado(numCaras = 6) {
     this.numCaras = numCaras;
     this.dadillo = document.createElement("input");
     this.dadillo.setAttribute("type", "button");
